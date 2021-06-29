@@ -1,0 +1,56 @@
+<html>
+
+  <head>
+    <title>Exercise Website</title>
+
+    <img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fphotos1.fotosearch.com%2Fbthumb%2FCSP%2FCSP991%2Fk12436959.jpg&f=1&nofb=1">
+
+  </head>
+
+  <body>
+
+    <script>
+
+    //  LOOPING A TRIANGLE
+    var num_rows = 7;
+    for(var row = 0; row < num_rows; row++){
+      var toPrint = "#";
+
+      for(var column = 0; column<row; column++){
+        toPrint += "#"
+      }
+      console.log(toPrint);
+    }
+
+    // FizzBuzz
+    for (i = 1; i < 100; i++){
+      let output = "";
+      if (i % 3 == 0) output += "Fizz"
+      if (i % 5 == 0) output += "Buzz"
+      console.log(output || i);
+    }
+
+    //CHESSBOARD
+    let size = 8;
+    let board = "";
+
+    for (let y = 0; y < size; y++){
+      for (let x = 0; x < size; x++){
+        if ((x + y) % 2 == 0){
+          board += " ";
+        } else {
+          board += "#"
+        }
+      }
+      board += "\n"
+    }
+
+    console.log(board)
+  
+
+    </script>
+
+  </body>
+
+
+</html>

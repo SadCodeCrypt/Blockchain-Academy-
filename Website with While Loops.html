@@ -1,0 +1,34 @@
+<html>
+
+  <head>
+    <title>This is a practice website with While Loops</title>
+  </head>
+
+   <body>
+
+     <h1> This is the title </h1>
+
+     <script>
+
+      var textToDisplay = "hello";
+
+      var counter = 0;
+
+      var shouldContinue = true;
+
+      while(shouldContinue){
+        document.write("<h1> Another loop iteration " + counter + "</h1>");
+        document.write("<h2> Counter is now " + counter + " " + textToDisplay +" </h2>");
+        counter+=5
+
+        if(counter>500){
+          shouldContinue = false;
+        }
+      }
+
+
+     </script>
+
+   </body>
+
+</html>
